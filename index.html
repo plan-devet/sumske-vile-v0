@@ -17,6 +17,10 @@
      h2.section {
        padding-top: 2em;
      }
+     .stan-content {
+       height: 42em;
+       overflow: auto;
+     }
     </style>
   </head>
 
@@ -105,7 +109,7 @@
         </iframe>
 			</div>
 
-      <h2 id="ponuda_stanova" class="section">Ponuda stanova</h2>
+      <h2 id="ponuda_stanova" class="section">Ponuda stanova (varijanta 1, image map)</h2>
       <div class="accordion accordion-flush" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
@@ -159,6 +163,130 @@
           </div>
         </div>
       </div>
+
+
+      <h2 id="ponuda_stanova" class="section">Ponuda stanova (varijanta 2, scroll)</h2>
+      <div class="row">
+        <div class="col-2">
+          <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link" href="#prizemlje">Prizemlje</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#stan-a-1-1">A 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#stan-a-1-2">A 1-2</a>
+                <a class="nav-link ms-3 my-1" href="#stan-b-1-1">B 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#stan-b-1-2">B 1-2</a>
+                <a class="nav-link ms-3 my-1" href="#stan-c-1-1">C 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#stan-c-1-2">C 1-2</a>
+              </nav>
+              <a class="nav-link" href="#kat1">1. kat</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#stan-a-2-1">A 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#stan-a-2-2">A 1-2</a>
+                <a class="nav-link ms-3 my-1" href="#stan-b-2-1">B 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#stan-b-2-2">B 1-2</a>
+                <a class="nav-link ms-3 my-1" href="#stan-c-2-1">C 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#stan-c-2-2">C 1-2</a>
+              </nav>
+              <a class="nav-link" href="#kat2">2. kat</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 my-1" href="#stan-a-3-1">A 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#stan-a-3-2">A 1-2</a>
+                <a class="nav-link ms-3 my-1" href="#stan-b-3-1">B 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#stan-b-3-2">B 1-2</a>
+                <a class="nav-link ms-3 my-1" href="#stan-c-3-1">C 1-1</a>
+                <a class="nav-link ms-3 my-1" href="#stan-c-3-2">C 1-2</a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+        <div class="col-10">
+          <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="stan-content" tabindex="0">
+            <div id="prizemlje"></div>
+            <div id="stan-a-1-1">
+              <h5>A 1-1</h5>
+              <img src="stan-a-1-1.png" alt="" width="100%">
+            </div>
+            <div id="stan-a-1-2">
+              <h5>A 1-2</h5>
+              <img src="stan-a-1-2.png" alt="" width="100%">
+            </div>
+            <div id="stan-b-1-1">
+              <h5>B 1-1</h5>
+              <img src="stan-b-1-1.png" alt="" width="100%">
+            </div>
+            <div id="stan-b-1-2">
+              <h5>B 1-2</h5>
+              <img src="stan-b-1-2.png" alt="" width="100%">
+            </div>
+            <div id="stan-c-1-1">
+              <h5>C 1-1</h5>
+              <img src="stan-c-1-1.png" alt="" width="100%">
+            </div>
+            <div id="stan-c-1-2">
+              <h5>C 1-2</h5>
+              <img src="stan-c-1-2.png" alt="" width="100%">
+            </div>
+            <div id="kat1"></div>
+            <div id="kat2"></div>
+          </div>
+        </div>
+      </div>
+
+
+      <h2 id="ponuda_stanova" class="section">Ponuda stanova (varijanta 3, change image)</h2>
+      <div class="row">
+        <div class="col-2">
+          <nav class="h-100 flex-column align-items-stretch pe-4 border-end">
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link">Prizemlje</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3 active" href="" onclick="showStan('a-1-1', this); return false;">A 1-1</a>
+                <a class="nav-link ms-3"        href="" onclick="showStan('a-1-2', this); return false;">A 1-2</a>
+                <a class="nav-link ms-3"        href="" onclick="showStan('b-1-1', this); return false;">B 1-1</a>
+                <a class="nav-link ms-3"        href="" onclick="showStan('b-1-2', this); return false;">B 1-2</a>
+                <a class="nav-link ms-3"        href="" onclick="showStan('c-1-1', this); return false;">C 1-1</a>
+                <a class="nav-link ms-3"        href="" onclick="showStan('c-1-2', this); return false;">C 1-2</a>
+              </nav>
+              <a class="nav-link">1. kat</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3" href="#stan-a-2-1">A 1-1</a>
+                <a class="nav-link ms-3" href="#stan-a-2-2">A 1-2</a>
+                <a class="nav-link ms-3" href="#stan-b-2-1">B 1-1</a>
+                <a class="nav-link ms-3" href="#stan-b-2-2">B 1-2</a>
+                <a class="nav-link ms-3" href="#stan-c-2-1">C 1-1</a>
+                <a class="nav-link ms-3" href="#stan-c-2-2">C 1-2</a>
+              </nav>
+              <a class="nav-link">2. kat</a>
+              <nav class="nav nav-pills flex-column">
+                <a class="nav-link ms-3" href="#stan-a-3-1">A 1-1</a>
+                <a class="nav-link ms-3" href="#stan-a-3-2">A 1-2</a>
+                <a class="nav-link ms-3" href="#stan-b-3-1">B 1-1</a>
+                <a class="nav-link ms-3" href="#stan-b-3-2">B 1-2</a>
+                <a class="nav-link ms-3" href="#stan-c-3-1">C 1-1</a>
+                <a class="nav-link ms-3" href="#stan-c-3-2">C 1-2</a>
+              </nav>
+            </nav>
+          </nav>
+        </div>
+        <div class="col-10">
+          <img id="img-stan" src="stan-a-1-1.png" alt="" width="100%">
+        </div>
+      </div>
+
+      <script>
+       function showStan(id, e) {
+         Array.from(document.getElementsByClassName('nav-link ms-3 active')).forEach(function(e) {
+           e.classList.remove("active");
+         });
+         e.classList.add("active");
+
+         img = document.getElementById("img-stan");
+         img.src = "stan-" + id + ".png";
+       }
+      </script>
+
+
 
       <h2 id="kontakt" class="section">Kontakt</h2>
       <div class="row">
